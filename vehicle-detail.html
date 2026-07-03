@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<title id="page-title">Vehicle Details | Autodirect (Pvt) Limited</title>
+<meta id="meta-desc" name="description" content="View vehicle details, specifications, pricing and photos. Contact Autodirect (Pvt) Limited in Colombo for more information or to book a test drive.">
+<link rel="canonical" href="https://www.autodirect.lk/vehicle-detail.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="vehicles">
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <div class="brand-mark">AD</div>
+      <div class="brand-text"><strong>Autodirect</strong><span>Pvt Limited</span></div>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" data-nav="home">Home</a></li>
+        <li><a href="vehicles.html" data-nav="vehicles">Vehicles</a></li>
+        <li><a href="about.html" data-nav="about">About Us</a></li>
+        <li><a href="index.html#how-it-works">How It Works</a></li>
+        <li><a href="reviews.html" data-nav="reviews">Reviews</a></li>
+        <li><a href="contact.html" data-nav="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-cta">
+      <a href="#" data-call class="btn btn-outline btn-sm">Call Now</a>
+      <a href="#" data-wa="Hi Autodirect, I'd like to know more about your available vehicles." class="btn btn-whatsapp btn-sm">WhatsApp Us</a>
+    </div>
+    <button class="hamburger" data-drawer-toggle aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-drawer" data-drawer>
+  <div class="backdrop" data-drawer-close></div>
+  <div class="panel">
+    <div class="drawer-top">
+      <div class="brand"><div class="brand-mark">AD</div><div class="brand-text"><strong>Autodirect</strong><span>Pvt Limited</span></div></div>
+      <button class="close-drawer" data-drawer-close aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <a class="nav-link" href="index.html" data-nav="home">Home</a>
+    <a class="nav-link" href="vehicles.html" data-nav="vehicles">Vehicles</a>
+    <a class="nav-link" href="about.html" data-nav="about">About Us</a>
+    <a class="nav-link" href="index.html#how-it-works">How It Works</a>
+    <a class="nav-link" href="reviews.html" data-nav="reviews">Reviews</a>
+    <a class="nav-link" href="sell-trade.html" data-nav="sell">Sell / Trade Your Car</a>
+    <a class="nav-link" href="test-drive.html" data-nav="testdrive">Book a Test Drive</a>
+    <a class="nav-link" href="contact.html" data-nav="contact">Contact</a>
+    <div class="drawer-cta">
+      <a href="#" data-call class="btn btn-outline btn-block">Call 077 568 7687</a>
+      <a href="#" data-wa="Hi Autodirect, I'd like to know more about your available vehicles." class="btn btn-whatsapp btn-block">Chat on WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<main>
+<section style="padding-bottom:0;">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / <a href="vehicles.html">Vehicles</a> / <span id="crumb-name">Vehicle</span></div>
+  </div>
+</section>
+
+<section id="detail-content" style="padding-top:16px;">
+  <div class="container">
+    <div class="detail-grid">
+      <div>
+        <div class="gallery-main"><img id="gallery-main-img" src="" alt=""></div>
+        <div class="gallery-thumbs" id="gallery-thumbs"></div>
+
+        <div style="margin-top:36px;">
+          <h1 id="v-title" style="font-size:clamp(24px,3.4vw,32px);"></h1>
+          <div class="pill-list" id="v-badges" style="margin-bottom:18px;"></div>
+          <p id="v-description"></p>
+
+          <h3 style="margin-top:28px;font-size:19px;">Key Specifications</h3>
+          <div class="spec-table" id="v-specs"></div>
+
+          <h3 style="margin-top:10px;font-size:19px;">Features</h3>
+          <div class="feature-tags" id="v-features"></div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="form-card" id="inquiry-form-card">
+          <h3>Inquire About This Vehicle</h3>
+          <p class="small-muted" style="margin-bottom:18px;">Send us your details and we'll get back to you shortly — your message also opens in WhatsApp.</p>
+          <div class="form-success"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Thanks! Your inquiry has been sent — our team will contact you shortly.</div>
+          <form class="lead-form" data-wa-template="Vehicle inquiry from {{name}} ({{phone}}) about {{vehicle}}. Message: {{message}}">
+            <div class="form-grid">
+              <div class="form-group"><label>Full Name *</label><input type="text" name="name" required placeholder="Your name"></div>
+              <div class="form-group"><label>Phone Number *</label><input type="tel" name="phone" required placeholder="07X XXX XXXX"></div>
+              <div class="form-group full"><label>Email</label><input type="email" name="email" placeholder="you@example.com"></div>
+              <input type="hidden" name="vehicle" id="inquiry-vehicle-field">
+              <div class="form-group full"><label>Message</label><textarea name="message" placeholder="I'd like more details about this vehicle..."></textarea></div>
+            </div>
+            <div class="hero-ctas" style="margin-top:6px;">
+              <button type="submit" class="btn btn-primary">Send Inquiry</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div>
+        <div class="sticky-side">
+          <div class="price-card">
+            <span class="status-badge" id="v-status-badge" style="position:static;display:inline-block;margin-bottom:12px;"></span>
+            <div class="price" id="v-price"></div>
+            <p class="small-muted" style="margin:6px 0 0;">Price is negotiable upon inspection. Contact us for the latest availability.</p>
+            <div class="price-actions">
+              <a href="#" id="v-wa-btn" target="_blank" rel="noopener" class="btn btn-whatsapp btn-block">WhatsApp Inquiry</a>
+              <a href="#" data-call class="btn btn-outline btn-block">Call 077 568 7687</a>
+              <a href="#" id="v-testdrive-btn" class="btn btn-primary btn-block">Book Test Drive</a>
+            </div>
+          </div>
+          <div class="card" style="padding:22px;">
+            <h4 style="font-size:15px;margin-bottom:10px;">Visit Our Showroom</h4>
+            <p class="small-muted" style="margin-bottom:4px;">15 Park Circus, Colombo 00500, Sri Lanka</p>
+            <p class="small-muted">Mon–Fri 9AM–6PM &middot; Sat 9AM–5PM &middot; Sun 10AM–3PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">More Options</div>
+      <h2>Similar Vehicles</h2>
+      <p>Other vehicles you may be interested in.</p>
+    </div>
+    <div class="vehicle-grid" id="similar-grid"></div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand" style="margin-bottom:14px;">
+          <div class="brand-mark">AD</div>
+          <div class="brand-text"><strong>Autodirect</strong><span>Pvt Limited</span></div>
+        </div>
+        <p>Autodirect (Pvt) Limited — Helping customers find quality vehicles with confidence.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="vehicles.html">Vehicles</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="sell-trade.html">Sell / Trade Your Car</a></li>
+          <li><a href="test-drive.html">Book a Test Drive</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li>15 Park Circus, Colombo 00500, Sri Lanka</li>
+          <li><a href="#" data-call>077 568 7687</a></li>
+          <li><a href="contact.html">Contact Form</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Business Hours</h5>
+        <ul>
+          <li>Mon – Fri: 9:00 AM – 6:00 PM</li>
+          <li>Saturday: 9:00 AM – 5:00 PM</li>
+          <li>Sunday: 10:00 AM – 3:00 PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> Autodirect (Pvt) Limited. All rights reserved.</span>
+      <span>Colombo, Sri Lanka</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-cta-bar">
+  <a href="#" data-call class="btn btn-outline">Call Now</a>
+  <a href="#" id="v-wa-mobile" target="_blank" rel="noopener" class="btn btn-whatsapp">WhatsApp</a>
+</div>
+<a href="#" id="v-wa-float" target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.74 13.4L3 21l3.72-1.3a8.9 8.9 0 0 0 4.33 1.13h0a8.94 8.94 0 0 0 8.92-8.94 8.86 8.86 0 0 0-2.37-5.57zM12.05 19.1a7.4 7.4 0 0 1-3.78-1.04l-.27-.16-2.8.98.93-2.73-.18-.28a7.44 7.44 0 1 1 13.8-3.94 7.45 7.45 0 0 1-7.7 7.17z"/></svg>
+</a>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/vehicle-detail.js"></script>
+<script src="assets/js/forms.js"></script>
+</body>
+</html>
